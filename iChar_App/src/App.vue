@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <h1>iChair eComerece App</h1>
-  </div>
+  <Header />
 </template>
 
 <script setup>
-
+import Header from './components/Header_App.vue'
 </script>
 
 <style>
