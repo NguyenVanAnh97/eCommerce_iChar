@@ -1,11 +1,13 @@
 <template>
     <div>
-        BannerSwiper
+
     </div>
 </template>
 
 <script setup>
-
+    defineProps({
+        items: Array
+    })
 </script>
 
 <style scoped>

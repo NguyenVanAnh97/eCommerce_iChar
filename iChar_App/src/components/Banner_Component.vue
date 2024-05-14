@@ -1,7 +1,7 @@
 <template>
   <div class="banner">
     <BannerSlider v-for="item in items" :key="item.id" :item="item"/>
-    <BannerSwiper :items="items"/>
+    <BannerSwiper :items="items" :bannerChange="handleBannerChange"/>
   </div>
 </template>
 
@@ -11,18 +11,25 @@ import BannerSlider from './BannerSlider.vue';
 import BannerSwiper from './BannerSwiper.vue';
 
 const items = ref([])
+// tạo 1 biến items để lưu trữ dữ liệu
 
 onMounted(() => {
   fetch('http://localhost:3000/items').then(res => res.json()).then(data => {
     items.value = data
   }).catch(err => console.log(err))  
 })
+//lấy dữ liệu từ api
 
 const handleBannerChange = (id) => {
   items.value.map((item) => {
     item.active = false
+    if (item.id === id) {
+      item.active = true
+    }
+    return item
   })
 }
+//
 
 </script>
 
