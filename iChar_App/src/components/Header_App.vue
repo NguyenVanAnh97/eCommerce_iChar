@@ -1,26 +1,18 @@
 <template>
     <header id="home">
         <RouterLink to="/" class="logo">iChar</RouterLink>
-        <ul class="nav">
-            <li v-for="nav in navs" :key="nav.id">
-                <RouterLink v-if="nav.name === 'Home'" to="/">
-                    <i class="bi bi-house-door-fill"></i>
-                </RouterLink>
-                <RouterLink v-else to="/">{{ nav.name }}</RouterLink>
-            </li>
-        </ul>
+        <Nav_component />
         <div class="features">
-
+            <CartBtn />
         </div>
     </header>
 </template>
 
 <script setup>
-import { navsData } from "@/data/data"
-import { ref } from "vue"
+import CartBtn from "./Cart_Btn.vue"
+import Nav_component from "./Nav_component.vue";
 
 
-const navs = ref(navsData)
 </script>
 
 <style scoped>
@@ -39,30 +31,6 @@ header {
     color: #fff;
     letter-spacing: 2px;
     font-weight: 800;
-}
-
-.nav {
-    display: flex;
-}
-
-.nav li {
-    list-style: none;
-    margin: 0 10px;
-}
-
-.nav li a {
-    color: #fff !important;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.nav li a:hover,
-.nav li a.active {
-    color: var(--primary);
 }
 
 .features {

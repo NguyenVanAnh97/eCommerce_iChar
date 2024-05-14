@@ -1,9 +1,11 @@
-<script setup>
+<template>
+  <BannerComponent />
+</template>
 
+<script setup>
+import BannerComponent from '../components/Banner_Component.vue'
 </script>
 
-<template>
-  <main>
+<style scoped>
 
-  </main>
-</template>
+</style>
