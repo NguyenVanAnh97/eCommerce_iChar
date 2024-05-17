@@ -23,6 +23,20 @@
                 }
             ],
             "color": "#fdb82c",
+            "demoImage": [
+                {
+                    "id": 1,
+                    "imgUrl": "/images/item-detail-img-1.png"
+                },
+                {
+                    "id": 2,
+                    "imgUrl": "/images/item-detail-img-2.png"
+                },
+                {
+                    "id": 3,
+                    "imgUrl": "/images/item-detail-img-3.png"
+                }
+            ],
             "qty": 1,
             "bgColor": "#fdb82c",
             "price": 399,
