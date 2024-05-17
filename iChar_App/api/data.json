@@ -68,6 +68,20 @@
                 }
             ],
             "color": "#fdb82c",
+            "demoImage": [
+                {
+                    "id": 1,
+                    "imgUrl": "/images/item-detail-img-1.png"
+                },
+                {
+                    "id": 2,
+                    "imgUrl": "/images/item-detail-img-2.png"
+                },
+                {
+                    "id": 3,
+                    "imgUrl": "/images/item-detail-img-3.png"
+                }
+            ],
             "qty": 1,
             "bgColor": "#fa5b5f",
             "price": 669,
@@ -99,6 +113,20 @@
                 }
             ],
             "color": "#fdb82c",
+            "demoImage": [
+                {
+                    "id": 1,
+                    "imgUrl": "/images/item-detail-img-1.png"
+                },
+                {
+                    "id": 2,
+                    "imgUrl": "/images/item-detail-img-2.png"
+                },
+                {
+                    "id": 3,
+                    "imgUrl": "/images/item-detail-img-3.png"
+                }
+            ],
             "qty": 1,
             "bgColor": "#67bb4a",
             "price": 890,
@@ -130,6 +158,20 @@
                 }
             ],
             "color": "#fdb82c",
+            "demoImage": [
+                {
+                    "id": 1,
+                    "imgUrl": "/images/item-detail-img-1.png"
+                },
+                {
+                    "id": 2,
+                    "imgUrl": "/images/item-detail-img-2.png"
+                },
+                {
+                    "id": 3,
+                    "imgUrl": "/images/item-detail-img-3.png"
+                }
+            ],
             "qty": 1,
             "bgColor": "#3ab7f7",
             "price": 1047,
@@ -161,6 +203,20 @@
                 }
             ],
             "color": "#fdb82c",
+            "demoImage": [
+                {
+                    "id": 1,
+                    "imgUrl": "/images/item-detail-img-1.png"
+                },
+                {
+                    "id": 2,
+                    "imgUrl": "/images/item-detail-img-2.png"
+                },
+                {
+                    "id": 3,
+                    "imgUrl": "/images/item-detail-img-3.png"
+                }
+            ],
             "qty": 1,
             "bgColor": "#fdb82c",
             "price": 2960,
@@ -192,6 +248,20 @@
                 }
             ],
             "color": "#fdb82c",
+            "demoImage": [
+                {
+                    "id": 1,
+                    "imgUrl": "/images/item-detail-img-1.png"
+                },
+                {
+                    "id": 2,
+                    "imgUrl": "/images/item-detail-img-2.png"
+                },
+                {
+                    "id": 3,
+                    "imgUrl": "/images/item-detail-img-3.png"
+                }
+            ],
             "qty": 1,
             "bgColor": "#e64ba7",
             "price": 2300,
@@ -223,6 +293,20 @@
                 }
             ],
             "color": "#fdb82c",
+            "demoImage": [
+                {
+                    "id": 1,
+                    "imgUrl": "/images/item-detail-img-1.png"
+                },
+                {
+                    "id": 2,
+                    "imgUrl": "/images/item-detail-img-2.png"
+                },
+                {
+                    "id": 3,
+                    "imgUrl": "/images/item-detail-img-3.png"
+                }
+            ],
             "qty": 1,
             "bgColor": "#dee0de",
             "price": 1688,
@@ -254,6 +338,20 @@
                 }
             ],
             "color": "#fdb82c",
+            "demoImage": [
+                {
+                    "id": 1,
+                    "imgUrl": "/images/item-detail-img-1.png"
+                },
+                {
+                    "id": 2,
+                    "imgUrl": "/images/item-detail-img-2.png"
+                },
+                {
+                    "id": 3,
+                    "imgUrl": "/images/item-detail-img-3.png"
+                }
+            ],
             "qty": 1,
             "bgColor": "#a7a7a7",
             "price": 2599,
