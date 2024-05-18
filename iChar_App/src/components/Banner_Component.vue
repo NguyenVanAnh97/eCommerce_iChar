@@ -20,7 +20,6 @@ onMounted(() => {
 })
 //lấy dữ liệu từ api
 
-console.log(items);
 
 const handleBannerChange = (id) => {
   items.value.map((item) => {
