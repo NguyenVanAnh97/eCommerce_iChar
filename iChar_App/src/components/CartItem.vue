@@ -1,6 +1,6 @@
 <template>
-  <div class="shopCartItem">
-    <th scope="row">{{ index + 1 }}></th>
+  <tr class="shopCartItem">
+    <th scope="row">{{ index + 1 }}</th>
     <td>
       <img :src="item.imgUrl" alt="" class="img-fluid" />
     </td>
@@ -10,16 +10,19 @@
     <td :style="{ color: item.color }"><i class="bi bi-record-fill"></i></td>
     <td>${{ item.price.toFixed(2) }}</td>
     <td>{{ item.qty }}</td>
-    <td>{{ item.discount * 100 }}</td>
+    <td>{{ item.discount * 100 }}%</td>
     <td>${{ (item.price * item.qty * (1 - item.discount)).toFixed(2) }}</td>
     <td>
-      <a href="#"><i class="bi bi-trash"></i></a>
+      <a href="#" @click.stop.prevent="handleRemoveFromCart(item)"><i class="bi bi-trash"></i></a>
     </td>
-  </div>
+  </tr>
 </template>
 
 <script setup>
+import { ref , inject } from 'vue';
 import { RouterLink } from 'vue-router'
+
+const cart = ref(inject('cart'))
 
 defineProps({
   item: {
@@ -31,6 +34,13 @@ defineProps({
     required: true
   }
 })
+
+const handleRemoveFromCart = (target) => {
+  let index = cart.value.indexOf(target)
+  if (index > -1) {
+    cart.value.splice(index, 1)
+  }
+}
 </script>
 
 <style scoped>
@@ -50,7 +60,7 @@ defineProps({
 }
 .shopCartItem a {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .shopCartItem img {
