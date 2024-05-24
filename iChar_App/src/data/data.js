@@ -1,7 +1,7 @@
 export const navsData = [
     {
         id: 1,
-        name: 'Home',
+        name: 'home',
         link: 'home',
         active: true,
     },

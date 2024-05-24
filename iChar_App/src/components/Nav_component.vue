@@ -1,11 +1,11 @@
 <template>
     <ul class="nav">
         <li v-for="nav in navs" :key="nav.id">
-            <RouterLink v-if="nav.name === 'Home'" to="/" :class="{ active: nav.active }"
+            <RouterLink v-if="nav.name === 'home'" :to="{ name: 'home' }" :class="{ active: nav.active }"
                 @click="handleNavActive(nav.id)">
                 <i class="bi bi-house-door-fill"></i>
             </RouterLink>
-            <RouterLink v-else to="/" :class="{ active: nav.active }" @click="handleNavActive(nav.id)">
+            <RouterLink v-else :to="{ name: nav.link }" :class="{ active: nav.active }" @click="handleNavActive(nav.id)">
                 {{ nav.name }}</RouterLink>
         </li>
     </ul>
