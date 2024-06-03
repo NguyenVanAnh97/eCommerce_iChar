@@ -13,6 +13,7 @@ onMounted(() => {
     scroll.value = window.scrollY
   })
 })
+
 </script>
 
 <style scoped>
