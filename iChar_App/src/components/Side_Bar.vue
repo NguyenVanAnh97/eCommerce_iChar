@@ -34,7 +34,7 @@ const handleToggleMenu = () => {
 .sideBar {
     position: fixed;
     width: 5%;
-    min-height: 100vh;
+    min-height: 100%;
     padding: 30px;
     background: var(--primary);
     display: flex;

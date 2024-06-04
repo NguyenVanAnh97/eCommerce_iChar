@@ -97,4 +97,12 @@ const modules = [Navigation]
         }
     }
 
+    @media (max-width: 768px) {
+        .swiper {
+            width: 70%;
+            bottom: 80px;
+            left: 20%;
+        }
+    }
+
 </style>
