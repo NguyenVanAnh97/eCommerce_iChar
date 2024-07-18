@@ -34,6 +34,7 @@ const filteredServices = computed(() => {
     service.name.toLowerCase().includes(search.value.toLowerCase())
   );
 });
+
 </script>
 
 <style scoped>

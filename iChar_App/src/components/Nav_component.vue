@@ -23,6 +23,7 @@ const handleNavActive = (id) => {
         return nav
     })
 }
+
 </script>
 
 <style scoped>

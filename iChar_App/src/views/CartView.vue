@@ -52,14 +52,20 @@ import CartItem from '../components/CartItem.vue'
 
 const cart = ref(inject('cart'))
 
-console.log(cart.value);
+//console.log(cart.value);
 
-const handleToPayment = computed(() => { // sử dụng computed để tính toán giá trị thay đổi
-  return cart.value
-    .map((item) => item.price * item.qty * (1 - item.discount)) //Biến đổi dữ liệu: map giúp biến đổi từng phần tử của mảng cart.value để tính toán giá trị sau giảm giá, chuẩn bị cho bước tính tổng.
-    .reduce((acc, cur) => acc + cur, 0) //Tính toán giá trị sau giảm giá.
-    .toFixed(2)
-})
+// const handleToPayment = computed(() => { // sử dụng computed để tính toán giá trị thay đổi
+//   return cart.value
+//     .map((item) => item.price * item.qty * (1 - item.discount)) //Biến đổi dữ liệu: map giúp biến đổi từng phần tử của mảng cart.value để tính toán giá trị sau giảm giá, chuẩn bị cho bước tính tổng.
+//     .reduce((acc, cur) => acc + cur, 0) //Tính toán giá trị sau giảm giá.
+//     .toFixed(2)
+// })
+
+const handleToPayment = computed(() => {
+  return cart.value.reduce((acc, item) => {
+    return acc + item.price * item.qty * (1 - item.discount);
+  }, 0).toFixed(2);
+});
 
 const total = handleToPayment
 </script>

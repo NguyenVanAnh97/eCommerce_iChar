@@ -110,7 +110,7 @@ const handleAddtoCart = item => {
     const itemToAdd = { ...item, qty: qty.value, color: selectedColor.value }
     if (cart.value.some(prop => prop.id === item.id)) return
     cart.value.push(itemToAdd)
-    console.log('Giỏ hàng:', cart.value);
+    //console.log('Giỏ hàng:', cart.value);
 }
 
 
